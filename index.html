@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QUEEN CARS</title>
+    <title>QUEEN CAR RENTALS</title>
     <style>
         * {
             margin: 0;
@@ -164,6 +164,15 @@
             margin-bottom: 0.5rem;
         }
 
+        .contact p a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        .contact p a:hover {
+            color: #1557b0;
+        }
+
         footer {
             background-color: #1a73e8;
             color: white;
@@ -171,11 +180,24 @@
             padding: 1rem;
             margin-top: 2rem;
         }
+
+        .social-media {
+            margin-top: 10px;
+        }
+
+        .social-media a {
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .social-media a:hover img {
+            filter: brightness(1.2);
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>QUEEN CARS</h1>
+        <h1>QUEEN CAR RENTALS</h1>
     </header>
     <nav>
         <ul>
@@ -185,39 +207,40 @@
         </ul>
     </nav>
     <section class="hero" id="home">
-    <h2>Rent Your Perfect Car Today</h2>
-    <p>Explore our exclusive range of cars for every journey.</p>
-    <button onclick="window.location.href='tel:+94776884282'">Book Now</button>
-</section>
+        <h2>Rent Your Perfect Car Today</h2>
+        <p>Explore our exclusive range of cars for every journey.</p>
+        <button onclick="window.location.href='tel:+94776884282'">Book Now</button>
+    </section>
 
     <section class="cars" id="cars">
         <h2>Our Vehicle Fleet</h2>
         <div class="car-grid">
             <div class="car-card">
-                <img src="547213776_122101506561010606_8937613012601479733_n.jpg" alt="Compact Hatchback">
+                <img src="E:\test10\html project ver 1.0\547213776_122101506561010606_8937613012601479733_n.jpg" alt="Compact Hatchback">
                 <button onclick="window.location.href='compact_hatchback.html'">Compact Hatchback</button>
             </div>
             <div class="car-card">
-                <img src="547420549_122100493827010606_1367055279016509778_n.jpg"" alt="Family Hatchback">
+                <img src="E:\test10\html project ver 1.0\547420549_122100493827010606_1367055279016509778_n.jpg" alt="Family Hatchback">
                 <button onclick="window.location.href='compact_hatchback.html'">Family Hatchback</button>
             </div>
             <div class="car-card">
-                <img src="546625961_122100496257010606_2084061388244893400_n.jpg" alt="Family Sedan">
+                <img src="E:\test10\html project ver 1.0\546625961_122100496257010606_2084061388244893400_n.jpg" alt="Family Sedan">
                 <button onclick="window.location.href='family_sedan.html'">Family Sedan</button>
             </div>
         </div>
     </section>
     <section class="contact" id="contact">
         <h2>Contact Us</h2>
-        <p>Email: queencarrentals12@gmail.com</p>
-        <p>Phone: +94 0776884282</p>
-        <p>Address: 13/D "Chaminda Sewana", Kotapitiya, Dharga Town , Sri Lanka</p>
+        <p>Email: <a href="mailto:queencarrentals12@gmail.com">queencarrentals12@gmail.com</a></p>
+        <p>Phone: <a href="tel:+94776884282">+94 0776884282</a></p>
+        <p>Address: 13/D "Chaminda Sewana", Kotapitiya, Dharga Town</p>
+        <div class="social-media">
+            <a href="https://www.facebook.com/profile.php?id=61580318203430" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" width="24" height="24"></a>
+            <a href="mailto:queencarrentals12@gmail.com"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968534.png" alt="Gmail" width="24" height="24"></a>
+        </div>
     </section>
     <footer>
-        <p>&copy; 2025 QUEEN CARS. All rights reserved.</p>
+        <p>&copy; 2025 QUEEN CAR RENTALS. All rights reserved.</p>
     </footer>
 </body>
 </html>
-
-
-
