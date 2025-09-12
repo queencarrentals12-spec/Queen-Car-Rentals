@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUEEN CAR RENTALS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #1a73e8;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2rem;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #1a73e8;
+        }
+
+        .hero {
+            background: url('https://source.unsplash.com/random/1600x400?hatchback') no-repeat center center/cover;
+            color: black;
+            text-align: center;
+            padding: 4rem 1rem;
+            margin-bottom: 2rem;
+            /* Add semi-transparent overlay for better text readability */
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+            z-index: 1;
+        }
+
+        .hero > * {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero button {
+            background-color: #1a73e8;
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .hero button:hover {
+            background-color: #1557b0;
+        }
+
+        .cars {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .cars h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+        }
+
+        .car-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .car-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .car-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .car-card button {
+            width: 100%;
+            padding: 1rem;
+            font-size: 1.5rem;
+            background-color: #1a73e8;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 0 0 8px 8px;
+        }
+
+        .car-card button:hover {
+            background-color: #1557b0;
+        }
+
+        .contact {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .contact h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact p {
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            background-color: #1a73e8;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>QUEEN CAR RENTALS</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#cars">Our Vehicles</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="hero" id="home">
+    <h2>Rent Your Perfect Car Today</h2>
+    <p>Explore our exclusive range of cars for every journey.</p>
+    <button onclick="window.location.href='tel:+94776884282'">Book Now</button>
+</section>
+
+    <section class="cars" id="cars">
+        <h2>Our Vehicle Fleet</h2>
+        <div class="car-grid">
+            <div class="car-card">
+                <img src="E:\test10\html project ver 1.0\547213776_122101506561010606_8937613012601479733_n.jpg" alt="Compact Hatchback">
+                <button onclick="window.location.href='compact_hatchback.html'">Compact Hatchback</button>
+            </div>
+            <div class="car-card">
+                <img src="E:\test10\html project ver 1.0\547420549_122100493827010606_1367055279016509778_n.jpg"" alt="Family Hatchback">
+                <button onclick="window.location.href='compact_hatchback.html'">Family Hatchback</button>
+            </div>
+            <div class="car-card">
+                <img src="E:\test10\html project ver 1.0\546625961_122100496257010606_2084061388244893400_n.jpg" alt="Family Sedan">
+                <button onclick="window.location.href='family_sedan.html'">Family Sedan</button>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: queencarrentals12@gmail.com</p>
+        <p>Phone: +94 0776884282</p>
+        <p>Address: 13/D "Chaminda Sewana", Kotapitiya, Dharga Town</p>
+    </section>
+    <footer>
+        <p>&copy; 2025 QUEEN CAR RENTALS. All rights reserved.</p>
+    </footer>
+</body>
+</html>
