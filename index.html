@@ -8,14 +8,20 @@
 </head>
 <body>
   <canvas id="particles-canvas"></canvas>
-  <header>
+  <section class="intro">
+    <h1>Welcome to Queen Car Rentals</h1>
+    <img src="1324.png" alt="Racing Car" class="racing-car">
+    <button id="start-btn" class="book-btn">Enter Site</button>
+  </section>
+
+  <header class="hidden">
     <img src="360_F_493639968_ZqpYbW6DqzOqIMCIUbnrYdJVVJnDDTvZ.png" 
          alt="Queen Car Rentals Logo" 
          class="logo">
     <h1>QUEEN CAR RENTALS</h1>
   </header>
 
-  <nav>
+  <nav class="hidden">
     <ul>
       <li><a href="#home">Home</a></li>
       <li><a href="#cars">Our Vehicles</a></li>
@@ -23,13 +29,13 @@
     </ul>
   </nav>
 
-  <section class="hero" id="home">
+  <section class="hero hidden" id="home">
     <h2>Rent Your Perfect Car Today</h2>
     <p>Explore our exclusive range of cars for every journey.</p>
-    <button id="book-now-btn">Book Now</button>
+    <button id="book-now-btn" class="book-btn">Book Now</button>
   </section>
 
-  <section class="cars" id="cars">
+  <section class="cars hidden" id="cars">
     <h2>Our Vehicle Fleet</h2>
     <div class="car-grid">
       <div class="car-card">
@@ -81,7 +87,7 @@
     </div>
   </section>
 
-  <section class="contact" id="contact">
+  <section class="contact hidden" id="contact">
     <h2>Contact Us</h2>
     <p>Email: <a href="mailto:queencarrentals12@gmail.com">queencarrentals12@gmail.com</a></p>
     <p>Phone: <a href="tel:+94776884282">+94 0776884282</a></p>
@@ -96,7 +102,7 @@
     </div>
   </section>
 
-  <footer>
+  <footer class="hidden">
     <p>&copy; 2025 QUEEN CAR RENTALS. All rights reserved.</p>
   </footer>
 
