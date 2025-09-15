@@ -1,8 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
+  console.log('DOM fully loaded and parsed');
+
   // Main page: Book Now button
   const bookNowBtn = document.getElementById('book-now-btn');
   if (bookNowBtn) {
     bookNowBtn.addEventListener('click', () => {
+      console.log('Main Book Now clicked');
       window.location.href = 'tel:+94776884282';
     });
   }
@@ -16,26 +19,23 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Car model pages: Book Now buttons
-  const bookCompactBtn = document.getElementById('book-compact-btn');
-  if (bookCompactBtn) {
-    bookCompactBtn.addEventListener('click', () => {
-      window.location.href = 'tel:+94776884282';
-    });
-  }
+  const bookButtons = [
+    document.getElementById('book-compact-btn'),
+    document.getElementById('book-family-hatch-btn'),
+    document.getElementById('book-family-sedan-btn')
+  ];
 
-  const bookFamilyHatchBtn = document.getElementById('book-family-hatch-btn');
-  if (bookFamilyHatchBtn) {
-    bookFamilyHatchBtn.addEventListener('click', () => {
-      window.location.href = 'tel:+94776884282';
-    });
-  }
-
-  const bookFamilySedanBtn = document.getElementById('book-family-sedan-btn');
-  if (bookFamilySedanBtn) {
-    bookFamilySedanBtn.addEventListener('click', () => {
-      window.location.href = 'tel:+94776884282';
-    });
-  }
+  bookButtons.forEach(button => {
+    if (button) {
+      console.log('Attached listener to:', button.id);
+      button.addEventListener('click', () => {
+        console.log(`${button.id} clicked`);
+        window.location.href = 'tel:+94776884282';
+      });
+    } else {
+      console.log('Button not found:', button);
+    }
+  });
 
   // Particles animation
   const canvas = document.getElementById('particles-canvas');
