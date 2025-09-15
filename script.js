@@ -93,4 +93,28 @@ document.addEventListener('DOMContentLoaded', () => {
       canvas.height = window.innerHeight;
     });
   }
+
+  // Intro transition
+  const intro = document.querySelector('.intro');
+  const startBtn = document.getElementById('start-btn');
+  const mainContent = document.querySelectorAll('.hidden');
+
+  if (startBtn) {
+    startBtn.addEventListener('click', () => {
+      intro.style.display = 'none';
+      mainContent.forEach(element => {
+        element.classList.remove('hidden');
+      });
+    });
+  }
+
+  // Auto-transition after 5 seconds (optional)
+  setTimeout(() => {
+    if (intro.style.display !== 'none') {
+      intro.style.display = 'none';
+      mainContent.forEach(element => {
+        element.classList.remove('hidden');
+      });
+    }
+  }, 5000);
 });
