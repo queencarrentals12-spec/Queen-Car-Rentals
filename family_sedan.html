@@ -1,66 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Family Sedan - QUEEN CAR RENTALS</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
-            text-align: center;
-        }
-        h1 {
-            color: #1a73e8;
-            margin-bottom: 20px;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 20px;
-        }
-        p {
-            font-size: 1.2rem;
-            color: #333;
-            max-width: 600px;
-            margin: 0 auto 20px;
-        }
-        a {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #1a73e8;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        a:hover {
-            background-color: #1557b0;
-        }
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Family Sedan - QUEEN CAR RENTALS</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Family Sedan</h1>
-    <h2>Toyota Premio 2013</h2>
-    <div class="gallery">
-        <img src="546625961_122100496257010606_2084061388244893400_n.jpg" alt="Family Sedan 1" width="350" height="150">
-        <img src="546614617_122100496203010606_2396898930848155472_n.jpg" alt="Family Sedan 2">
-        <img src="547256089_122100496305010606_2742193622804009173_n.jpg" alt="Family Sedan 3">
-        <img src="546614646_122100496161010606_837491406761184447_n.jpg" alt="Family Sedan 4">
+  <header>
+    <img src="360_F_493639968_ZqpYbW6DqzOqIMCIUbnrYdJVVJnDDTvZ.png" 
+         alt="Queen Car Rentals Logo" 
+         style="max-width: 180px; display: block; margin: 0 auto 10px auto;">
+    <h1>QUEEN CAR RENTALS</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="index.html#cars">Our Vehicles</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="car-details">
+    <h2>Family Sedan</h2>
+    <div class="car-content">
+      <img src="546625961_122100496257010606_2084061388244893400_n.jpg" alt="Family Sedan">
+      <h3>Toyota Premio</h3>
+      <p>Luxurious and equipped for comfort, the Family Sedan is perfect for long journeys.</p>
+      <ul>
+        <li>Daily Rate: Negotiable</li>
+        <li>Capacity: 5 seats</li>
+        <li>Features: Luxury seats, GPS-ready, Android Setup</li>
+      </ul>
+      <button id="book-family-sedan-btn">Book Now</button>
     </div>
-    <p>Our Family Sedan is perfect if you want a comfortable, efficient, and safe car for everyday family life without the bulk and higher running costs of an SUV.</p>
-     <section class="hero" id="home">
-    <h2>Rent Your Perfect Car Today</h2>
-    <a href='https://www.facebook.com/share/17EBwUXB9n/'>More Info About This Car</a>
   </section>
-  <br/>
-    <a href="index.html">Back to Home</a>
+
+  <section class="contact" id="contact">
+  <h2>Contact Us</h2>
+  <p>Email: <a href="mailto:queencarrentals12@gmail.com">queencarrentals12@gmail.com</a></p>
+  <p>Phone: <a href="tel:+94776884282">+94 0776884282</a></p>
+  <p>Address: 13/D "Chaminda Sewana", Kotapitiya, Dharga Town</p>
+  <div class="social-media">
+    <a href="https://www.facebook.com/profile.php?id=61580318203430" target="_blank">
+      <img src="123456.png" alt="Facebook" width="24" height="24">
+    </a>
+    <a href="mailto:queencarrentals12@gmail.com">
+      <img src="159346.png" alt="Gmail" width="24" height="24">
+    </a>
+  </div>
+</section>
+
+  <footer>
+    <p>&copy; 2025 QUEEN CAR RENTALS. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
